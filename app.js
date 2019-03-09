@@ -9,6 +9,7 @@ var usersRouter = require('./routes/users');
 var menuRouter = require('./routes/menu');
 var servicesRouter = require('./routes/services');
 var reservationRouter = require('./routes/reservation');
+var contactRouter = require('./routes/contact');
 var app = express();
 
 // view engine setup
@@ -28,7 +29,7 @@ app.use('/users', usersRouter);
 app.use('/menu', menuRouter);
 app.use('/services', servicesRouter);
 app.use('/reservation', reservationRouter);
-app.use()
+app.use('/contact', contactRouter);
 
 /////////////////////////////////////////////////
 
