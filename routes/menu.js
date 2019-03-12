@@ -1,9 +1,29 @@
 var express = require('express');
 var router = express.Router();
 
-/* GET menu page. */
-router.get('/', function(req, res, next) {
-  res.render('menu');
+var conn = require('./../inc/query_tb_menu');
+
+conn.getMenu().then((results,err) => {
+
+  if(err){
+
+    console.log(err);
+
+  } else {
+
+    router.get('/', function(req, res, next) {
+      res.render('menu', {
+      title: 'Restaurante Maduro',
+      headertext: 'Experimente nossas novidades!',
+      menus: results
+      });
+    });
+
+  }
+
+
 });
+
+
 
 module.exports = router;

@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* GET menu page. */
 router.get('/', function(req, res, next) {
-  res.render('reservation');
+  res.render('reservation',{title: 'Restaurante Maduro'});
 });
 
 module.exports = router;

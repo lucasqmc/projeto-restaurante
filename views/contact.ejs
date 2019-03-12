@@ -1,52 +1,6 @@
 <!DOCTYPE HTML>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<title>Contato - Restaurante Saboroso!</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="description" content="Site do restaurante fictício Saboroso desenvolvido no curso de JavaScript da Hcode Treinamentos"
-		/>
-		<meta name="author" content="Hcode.com.br" />
-
-		<link rel="icon" href="favicon.ico" type="image/x-icon" />
-		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-
-		<meta name="theme-color" content="#FBB448">
-	
-		<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
-	
-		<!-- Animate.css -->
-		<link rel="stylesheet" href="css/animate.css">
-		<!-- Icomoon Icon Fonts-->
-		<link rel="stylesheet" href="css/icomoon.css">
-		<!-- Themify Icons-->
-		<link rel="stylesheet" href="css/themify-icons.css">
-		<!-- Bootstrap  -->
-		<link rel="stylesheet" href="css/bootstrap.css">
-	
-		<!-- Magnific Popup -->
-		<link rel="stylesheet" href="css/magnific-popup.css">
-	
-		<!-- Bootstrap DateTimePicker -->
-		<link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css">
-	
-		<!-- Owl Carousel  -->
-		<link rel="stylesheet" href="css/owl.carousel.min.css">
-		<link rel="stylesheet" href="css/owl.theme.default.min.css">
-	
-		<!-- Theme style  -->
-		<link rel="stylesheet" href="css/style.css">
-	
-		<!-- Modernizr JS -->
-		<script src="js/modernizr-2.6.2.min.js"></script>
-		<!-- FOR IE9 below -->
-		<!--[if lt IE 9]>
-		<script src="js/respond.min.js"></script>
-		<![endif]-->
-	
-	</head>
+		<%- include("inc/head")-%>
 	<body>
 		
 	<div class="gtco-loader"></div>
@@ -54,60 +8,10 @@
 	<div id="page">
 
 	
-		<nav class="gtco-nav" role="navigation">
-			<div class="gtco-container">
-
-				<div class="row">
-					<div class="col-sm-4 col-xs-12">
-						<div id="gtco-logo">
-							<a href="/">Maduro
-								<em>!</em>
-							</a>
-						</div>
-					</div>
-					<div class="col-xs-8 text-right menu-1">
-						<ul>
-							<li>
-								<a href="/menu">Menu</a>
-							</li>
-							<li>
-								<a href="/services">Serviços</a>
-							</li>
-							<li class="btn-cta">
-								<a href="/reservation">
-									<span>Reserva</span>
-								</a>
-							</li>
-							<li>
-								<a href="/contact">Contato</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-
-			</div>
-		</nav>
-	
-	<header id="gtco-header" class="gtco-cover gtco-cover-sm" role="banner" style="background-image: url(images/img_bg_3.jpg)">
-		<div class="overlay"></div>
-		<div class="gtco-container">
-			<div class="row">
-				<div class="col-md-12 col-md-offset-0 text-center">
-
-					<div class="row row-mt-15em">
-						<div class="col-md-12 mt-text animate-box" data-animate-effect="fadeInUp">
-							<span class="intro-text-small">Feito por
-								<a href="https://www.hcode.com.br" target="_blank">Hcode.com.br</a>
-							</span>
-							<h1 class="cursive-font">Diga um oi!</h1>	
-						</div>
-						
-					</div>
-					
-				</div>
-			</div>
-		</div>
-	</header>
+		<!-- NAVBAR :  -->		
+		<%- include("inc/nav") -%>
+		<!-- HEADER-MENU :  -->		
+		<%- include("inc/header-menu") -%>
 	
 	
 	<div class="gtco-section">
@@ -148,10 +52,10 @@
 					<div class="gtco-contact-info">
 						<h3>Informações de Contato</h3>
 						<ul>
-							<li class="address">Avenida, R. José Versolato, 101 - 12ª andar - Centro, São Bernardo do Campo - SP, 09750-730</li>
-							<li class="phone"><a href="tel://1121497360">(11) 2149-7360</a></li>
-							<li class="email"><a href="mailto:contato@hcode.com.br">contato@hcode.com.br</a></li>
-							<li class="url"><a href="https://www.hcode.com.br">hcode.com.br</a></li>
+							<li class="address">SH Jardim Botânico Condomínio Parque - Jardim Botânico, Brasília - DF, 14789-632</li>
+							<li class="phone"><a href="tel://61981115424">(61) 98111-5424</a></li>
+							<li class="email"><a href="mailto:lucasleitemm@hotmail.com">lucasleitemm@hotmail.com</a></li>
+							
 						</ul>
 					</div>
 
@@ -212,14 +116,7 @@
 					</div>
 				</div>
 	
-				<div class="col-md-12 text-center copyright">
-					<p>
-						<small class="block">&copy; 2018 Hcode. Todos os Direitos Reservados.</small>
-						<small class="block">Desenvolvido por
-							<a href="https://www.hcode.com.br" target="_blank">Hcode.com.br</a>
-						</small>
-					</p>
-				</div>
+
 			</div>
 	
 		</div>
